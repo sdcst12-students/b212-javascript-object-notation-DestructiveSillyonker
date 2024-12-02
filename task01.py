@@ -7,3 +7,10 @@
 
 import json
 
+
+def findnum(filename):
+    return json.loads(open(filename, 'r').read())
+
+print(max(findnum('task01a.txt')))
+print(max(findnum('task01b.txt')))
+print(max(findnum('task01c.txt')))
